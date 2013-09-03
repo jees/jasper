@@ -7,4 +7,24 @@ package org.jasper.rs2;
  */
 public final class GameEngine {
 
+	/**
+	 * The {@link GameEngine} singleton
+	 */
+	private static final GameEngine ENGINE = new GameEngine();
+	
+	/**
+	 * Creates a new {@link GameEngine}
+	 */
+	public GameEngine() {
+		
+	}
+	
+	/**
+	 * Gets the game engine instance
+	 * @return The game engine
+	 */
+	public GameEngine getEngine() {
+		return ENGINE;
+	}
+	
 }
