@@ -8,7 +8,7 @@ import net.rs.comet.model.game.object.GameObjectLoader;
 import net.rs.comet.utilities.ApplicationConstants;
 
 public class Comet {
-
+ //TRY THIS
 	/**
 	 * The current loading stage of the application.
 	 */
