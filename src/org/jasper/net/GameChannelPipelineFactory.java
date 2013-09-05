@@ -34,6 +34,7 @@ public final class GameChannelPipelineFactory implements ChannelPipelineFactory 
 	public ChannelPipeline getPipeline() throws Exception {
 		ChannelPipeline p = Channels.pipeline();
 		p.addLast("timeout", new ReadTimeoutHandler(timer, 10));
+		p.addLast("handler", new GameChannelHandler());
 		return p;
 	}
 
